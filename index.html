@@ -12,8 +12,8 @@
 <body>
     <main class="container" id="app">
 
-        <article v-for="s in students">
-            <p>Hola yo soy Galis</p>
+        <article v-for="value in students">
+            <p><span :style="{backgroundColor: value.length >=7? 'yellow' : ''}">{{ value }}</span></p>
         </article>
 
     </main>
